@@ -1,5 +1,16 @@
 {
-  "env": {
-    "amd": true
+  "extends": [
+    "react-app",
+    "react-app/jest"
+  ],
+  "plugins": [
+    "postcss-modules"
+  ],
+  "rules": {
+    "postcss-modules/no-undef-class": "error",
+    "postcss-modules/no-unused-class": "warn"
+  },
+  "parserOptions": {
+    "tsconfigRootDir": "./"
   }
 }

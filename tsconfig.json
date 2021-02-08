@@ -1,12 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [ "es2015", "dom" ],
-    "outFile": "./lib/bundle.js",
-    "jsx": "react",
-    "module": "amd",
-    "declaration": true,
-    "declarationMap": true,
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "jsx": "react-jsx",
     "sourceMap": true,
     "strict": true,
     "noImplicitAny": false,
@@ -22,7 +21,20 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "isolatedModules": true,
+    "noEmit": true
   },
-  "include": [ "./src/components" ]
+  "include": [
+    "./src"
+  ]
 }

@@ -1,9 +1,9 @@
-import * as React from 'react';
+import { Button } from './components';
 
 export const App = () => {
   return (
     <div className="App">
-      Hello World
+      <Button>Add event</Button>
     </div>
   );
 };
